@@ -26,6 +26,6 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # copy code
-COPY /yelpscraper_ec2.py  /home/ubuntu/docker_ec2/yelpscraper_ec2.py
+COPY /yelpscraper_ec2.py  yelpscraper_ec2.py
 
 ENTRYPOINT ["python","yelpscraper_ec2.py"]
